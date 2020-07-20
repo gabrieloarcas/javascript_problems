@@ -29,11 +29,7 @@ const sortMethod = (string) => {
 
 // Example 1
 const anagramChecker = (string1, string2) => {
-  // arrays from strings, sort every letter, make them case-insensitive and then compare them;
-  let sortedString1 = sortMethod(string1); //my special own method
-  let sortedString2 = sortMethod(string2);
-  console.log(sortedString1); //Test
-  return sortedString1 === sortedString2 ? true : false; //check if the strings are the same;
+  return sortMethod(string1) === sortMethod(string2); //check if the strings are the same;
 };
 
 // Test this;
@@ -148,7 +144,7 @@ const largestDotProduct = (arr1, arr2) => {
   );
   //Test largest multiplied from each array:
   console.log(multipliedPairs);
-  return multipliedPairs.reduce((acc, item) => acc + item);
+  return multipliedPairs.reduce((acc, item) => acc + item, 0);
 };
 
 //Test
