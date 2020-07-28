@@ -165,7 +165,7 @@ const primeChecker = (num) => {
     if (num % i === 0) {
       /* we check for nonprime numbers. So, the division remainder is 0 for a 
 number divisible by other numbers that are equal or greater than 2.. also, if we would divide by one.. 
-we would not able to exclude the prime numbers for this first condition */
+we would not be able to exclude the prime numbers for this first condition */
       return false;
     }
   }
