@@ -24,7 +24,7 @@ fizzBuzz();
  */
 
 const sortMethod = (string) => {
-  return Array.from(string.toUpperCase()).sort().join("").toString();
+  return Array.from(string.toUpperCase()).sort().join("");
 }; // I've placed this here and not inside const anagramChecker, cause I'm using it for the Class example as well;
 
 // Example 1
