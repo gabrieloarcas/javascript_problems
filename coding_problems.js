@@ -49,6 +49,18 @@ class Anagram {
 let test = new Anagram("code99play", "PLayCode99");
 console.log(test.anagramChecker());
 
+////////////Ruby version: by inventing a method and add it to built in String class
+
+class String
+  def anagram?
+    self == self.reverse
+  end
+end
+
+//test
+"axa".anagram?
+////////////////////
+
 /**
  * 3. DECK OF CARDS
  */
